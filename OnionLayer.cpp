@@ -47,12 +47,12 @@ void OnionLayer::build_onion_layers(vector<int> index) {
 
     if (index.size() > 3) {
         this->create_qhull_file(index);
-        char *s                 = this->use_qhull();
-        index_                  = this->parse_string_to_int_array(s);
-        index_                  = this->find_dominate_points(index);
+        char *s = this->use_qhull();
+        index_  = this->parse_string_to_int_array(s);
+        index_  = this->find_dominate_points(index);
 
     } else{
-        index_                  = index;
+        index_  = index;
     }
 
 
